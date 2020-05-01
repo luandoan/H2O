@@ -1,0 +1,10 @@
+#!/bin/bash
+#PBS -l walltime=240:00:00
+#PBS -l nodes=1:ppn=16:GPU
+#PBS -j oe
+#
+cd $PBS_O_WORKDIR
+date
+mpirun -np 16 -machinefile $PBS_NODEFILE    ~/bin/lmp_gpu_Feb17 -sf gpu -pk gpu 4 -in gen.in -log log.lammps.1 > outfile.1
+#
+
