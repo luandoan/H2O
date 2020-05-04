@@ -1,0 +1,26 @@
+LAMMPS (3 Mar 2020)
+
+
+# ----------------- Init Section -----------------
+
+include "gen.in.init"
+
+ # a variable named `cutoff` is required by GROMOS_54A7_ATB.lt
+ variable cutoff equal 14.0 # Angstroms
+ boundary p p p
+
+        units real
+        atom_style      full
+        bond_style      harmonic
+        angle_style     harmonic
+        dihedral_style  harmonic
+        improper_style  harmonic
+        #pair_style      lj/cut/coul/cut ${cutoff}
+        pair_style      lj/cut/coul/long   ${cutoff}
+        pair_style      lj/cut/coul/long   14
+        special_bonds lj 0.0 0.0 0.5 coul 0.0 0.0 1.0 angle yes dihedral yes
+  	kspace_style pppm 1e-4
+
+package            gpu 4 newton off
+ERROR: Package gpu command without GPU package installed (../input.cpp:1741)
+Last command: package            gpu 4 newton off
