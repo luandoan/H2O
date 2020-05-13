@@ -1,0 +1,10 @@
+#!/bin/bash
+#PBS -l walltime=240:00:00
+#PBS -l nodes=1:ppn=1 
+#PBS -j oe
+#
+cd $PBS_O_WORKDIR
+date
+java -jar AutoCorAv.jar ./dump.lammpstrj 1 10 > outfile.ac2
+#
+

@@ -1,0 +1,9 @@
+Thu Jun  6 21:25:08 EDT 2019
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at java.util.Arrays.copyOfRange(Arrays.java:3664)
+	at java.lang.String.<init>(String.java:207)
+	at java.io.BufferedReader.readLine(BufferedReader.java:356)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at analysisLammpsDump.readdumpCustom.readnextStep(readdumpCustom.java:122)
+	at analysisLammpsDump.AutoCorrelation.<init>(AutoCorrelation.java:110)
+	at analysisLammpsDump.AutoCorrelation.main(AutoCorrelation.java:50)

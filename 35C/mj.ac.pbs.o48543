@@ -1,0 +1,5 @@
+Sun Jun  9 21:57:29 EDT 2019
+Exception in thread "main" java.lang.NullPointerException
+	at analysisLammpsDump.readdumpCustom.readAverageNStep(readdumpCustom.java:256)
+	at analysisLammpsDump.AutoCorrelation.<init>(AutoCorrelation.java:167)
+	at analysisLammpsDump.AutoCorrelation.main(AutoCorrelation.java:56)

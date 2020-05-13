@@ -1,0 +1,5 @@
+Thu Jun  6 23:22:55 EDT 2019
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at analysisLammpsDump.readdumpCustom.readnextStep(readdumpCustom.java:125)
+	at analysisLammpsDump.AutoCorrelation.<init>(AutoCorrelation.java:110)
+	at analysisLammpsDump.AutoCorrelation.main(AutoCorrelation.java:50)
